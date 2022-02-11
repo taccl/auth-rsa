@@ -1,0 +1,41 @@
+{
+  "name": "@taccl/auth-rsa-util",
+  "description": "",
+  "homepage": "https://github.com/taccl/auth-rsa-util#readme",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "config:scripts": "ts-node ./config/scripts",
+    "lint:fix": "eslint --fix --ext .ts,.tsx .",
+    "lint:run": "eslint --ext .ts,.tsx .",
+    "build:tsc:clean": "tsc --build --clean && tsc --build",
+    "build:tsc:clear": "tsc --build --clean",
+    "build:tsc:noargs": "tsc",
+    "build:tsc:version": "tsc --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taccl/auth-rsa-util.git"
+  },
+  "author": "TaYaKi71751",
+  "bugs": {
+    "url": "https://github.com/taccl/auth-rsa-util/issues"
+  },
+  "dependencies": {
+    "@taccl/package": "github:taccl/package#dist",
+    "@types/node": "^17.0.17",
+    "@types/node-rsa": "^1.1.1",
+    "node-rsa": "^1.1.1",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0"
+  }
+}
